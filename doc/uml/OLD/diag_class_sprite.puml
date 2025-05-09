@@ -1,0 +1,217 @@
+@startuml
+class weaponry.Shot {
+- {static} int ROWS
+- {static} int COLS
++ <<Create>> Shot(Image,int,int)
++ void setPos(int,int)
++ void update()
+}
+
+
+class StrongBear {
++ <<Create>> StrongBear()
+}
+
+class Bear {
+- int N
+- int T
+- int S
+- int n
+- int t
++ <<Create>> Bear()
++ void updateFrame()
++ void update()
+}
+
+
+interface ICanShoot {
+~ ArrayList<AShot> shoot()
+}
+
+abstract class weaponry.AWeapon {
++ {abstract}ArrayList<AShot> shoot(ASprite)
+}
+
+interface ICanSpawn {
+~ List<AEnemy> spawn()
+}
+
+class Shark {
++ <<Create>> Shark()
++ <<Create>> Shark(int)
+}
+
+class weaponry.Cannonball {
+~ {static} int ROWS
+~ {static} int COLS
+~ {static} int MAX_SPEED
++ <<Create>> Cannonball()
++ void update()
+}
+
+
+class weaponry.SnipperGun {
++ ArrayList<AShot> shoot(ASprite)
+}
+
+class Tower {
++ <<Create>> Tower()
++ void update()
++ void updateFrame()
+}
+
+class LifesSprite {
+~ AppStatus appStatus
++ <<Create>> LifesSprite(Image,AppStatus)
++ void update()
++ void updateFrame()
++ void draw(GraphicsContext)
+}
+
+
+abstract class AGroundEnemy {
+- {static} Logger log
++ <<Create>> AGroundEnemy(Image,int,int)
++ <<Create>> AGroundEnemy(Image,int,int,int,int)
++ void update()
++ void updateFrame()
+}
+
+
+class Miau {
+- int n
++ <<Create>> Miau()
++ <<Create>> Miau(int)
++ void updateFrame()
+}
+
+
+class AItem {
+}
+interface IHaveShield {
+~ boolean impact()
+}
+
+class Hero {
+- boolean isAlive
++ <<Create>> Hero()
++ void setInitPos()
++ boolean isAlive()
++ void setAlive(boolean)
++ void moveRight()
++ void moveLeft()
++ void moveUp()
++ void moveDown()
++ void waiting()
++ void stopVert()
++ void stopHoriz()
++ void updateFrame()
++ Rect[] getRects()
++ void update()
++ boolean isAtFinishPosition()
++ AShot shoot()
+}
+
+
+class FlyingBunny {
++ <<Create>> FlyingBunny()
++ <<Create>> FlyingBunny(int)
+}
+
+abstract class AEnemy {
+- AWeapon weapon
++ <<Create>> AEnemy(Image,int,int)
++ <<Create>> AEnemy(Image,int,int,int,int)
++ void setWeapon(AWeapon)
++ boolean hasWeapon()
++ ArrayList<AShot> shoot()
+}
+
+
+abstract class AWaterEnemy {
+- {static} Logger log
++ <<Create>> AWaterEnemy(Image,int,int)
++ <<Create>> AWaterEnemy(Image,int,int,int,int)
++ void update()
++ void updateFrame()
+}
+
+
+class SpriteTemp {
+- int life
+- List<SpriteTemp> temps
++ <<Create>> SpriteTemp(List<SpriteTemp>,int,int,Image,int)
++ void update()
++ void remove()
+}
+
+
+abstract class ASprite {
+- {static} Logger log
+# int rows
+# int cols
+# int colSpace
+# int rowSpace
+# int x
+# int y
+# int xSpeed
+# int ySpeed
+# Image img
+# int currentFrame
+# int width
+# int height
+# int side
++ <<Create>> ASprite(Image,int,int)
++ <<Create>> ASprite(Image,int,int,int,int)
++ int getX()
++ void setX(int)
++ int getY()
++ void setY(int)
++ void setPos(int,int)
++ int getXSpeed()
++ void setXSpeed(int)
++ int getYSpeed()
++ void setYSpeed(int)
++ void setSpeed(int,double)
++ double getSpeed()
++ double getAngDeg()
++ Rect getRect()
++ Rect[] getRects()
++ boolean collides(ASprite)
++ void draw(GraphicsContext)
++ {abstract}void update()
+}
+
+
+abstract class weaponry.AShot {
++ <<Create>> AShot(Image,int,int)
+}
+
+abstract class AFlyingEnemy {
++ <<Create>> AFlyingEnemy(Image,int,int)
++ <<Create>> AFlyingEnemy(Image,int,int,int,int)
++ void update()
++ void updateFrame()
+}
+
+
+
+weaponry.AShot <|-- weaponry.Shot
+Bear <|-- StrongBear
+AGroundEnemy <|-- Bear
+AWaterEnemy <|-- Shark
+weaponry.AShot <|-- weaponry.Cannonball
+weaponry.AWeapon <|-- weaponry.SnipperGun
+AEnemy <|-- Tower
+ASprite <|-- LifesSprite
+AEnemy <|-- AGroundEnemy
+AGroundEnemy <|-- Miau
+ASprite <|-- Hero
+AFlyingEnemy <|-- FlyingBunny
+ICanShoot <|.. AEnemy
+ASprite <|-- AEnemy
+AEnemy <|-- AWaterEnemy
+ASprite <|-- SpriteTemp
+ASprite <|-- weaponry.AShot
+AEnemy <|-- AFlyingEnemy
+@enduml

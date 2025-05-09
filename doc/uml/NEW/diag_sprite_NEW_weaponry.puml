@@ -1,0 +1,54 @@
+@startuml
+
+abstract class weaponry.AWeapon {
+# ASprite owner
+# boolean isRechargable
+# int ammunition
++ <<Create>> AWeapon(ASprite)
++ <<Create>> AWeapon(ASprite,boolean,int)
++ ASprite getOwner()
++ void setOwner(ASprite)
++ boolean isRechargable()
++ void setRechargable(boolean)
++ void recharge(int)
++ int getAmmunition()
++ void setAmmunition(int)
++ {abstract}List<AShot> shoot()
++ String toString()
++ boolean equals(Object)
++ int hashCode()
+}
+
+class weaponry.Pistol {
++ <<Create>> Pistol(ASprite)
++ List<AShot> shoot()
++ AShot shootOnce()
++ boolean isDisposable()
+}
+
+class weaponry.CrossGun {
+- boolean isDisposable
++ <<Create>> CrossGun(ASprite)
++ <<Create>> CrossGun(ASprite,boolean,int,boolean)
++ List<AShot> shoot()
++ boolean isDisposable()
+}
+
+class weaponry.HeroTargetGun {
++ <<Create>> HeroTargetGun(ASprite)
++ List<AShot> shoot()
+}
+
+interface interfaces.IIsDisposable {
+~ boolean isDisposable()
+}
+
+
+
+Hero o--> weaponry.AWeapon
+weaponry.AWeapon <|-- weaponry.CrossGun
+weaponry.AWeapon <|-- weaponry.Pistol
+weaponry.AWeapon <|-- weaponry.HeroTargetGun
+interfaces.IIsDisposable <|.up. weaponry.CrossGun
+interfaces.IIsDisposable <|.. weaponry.Pistol
+@enduml

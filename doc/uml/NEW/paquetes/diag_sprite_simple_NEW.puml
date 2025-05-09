@@ -1,0 +1,34 @@
+@startuml
+items.AItem <|-- items.LifeItem
+weaponry.AShot <|-- weaponry.Shot
+ASprite <|-up- items.AItem
+enemies.Bear <|-- enemies.StrongBear
+enemies.AFlyingEnemy <|-- enemies.FlyingBunny
+interfaces.IHaveShield <|.. enemies.BombEnemy
+enemies.AEnemy <|-- enemies.BombEnemy
+interfaces.IIsDisposable <|.. weaponry.CrossGun
+interfaces.IIsDisposable <|.. weaponry.Pistol
+weaponry.AWeapon <|-- weaponry.CrossGun
+enemies.AEnemy <|-- enemies.AFlyingEnemy
+weaponry.AShot <|-- weaponry.Cannonball
+weaponry.AWeapon <|-- weaponry.Pistol
+interfaces.ICanShoot <|.. enemies.AEnemy
+ASprite <|-- enemies.AEnemy
+items.AItem <|-- items.CrossGunItem
+enemies.AEnemy <|-- enemies.Tower
+ASprite <|-up- Hero
+weaponry.AWeapon <|-- weaponry.HeroTargetGun
+enemies.AEnemy <|-- enemies.AWaterEnemy
+interfaces.ICanMove <|.. enemies.AMovableEnemy
+enemies.AEnemy <|-- enemies.AMovableEnemy
+enemies.AMovableEnemy <|-- enemies.FlyingBouncerEnemy
+items.AItem <|-- items.AmmunitionItem
+enemies.AEnemy <|-- enemies.AGroundEnemy
+ASprite <|-up- hud.LifesSprite
+enemies.AGroundEnemy <|-- enemies.Bear
+ASprite <|-- effects.SpriteTemp
+enemies.AGroundEnemy <|-- enemies.Miau
+enemies.AWaterEnemy <|-- enemies.Shark
+ASprite <|-- weaponry.AShot
+Hero o--> weaponry.AWeapon
+@enduml

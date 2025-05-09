@@ -1,0 +1,345 @@
+@startuml
+
+abstract class edu.masanz.da.pk3.sprite.ASprite {
+- {static} Logger log
+# int rows
+# int cols
+# int colSpace
+# int rowSpace
+# int x
+# int y
+# int xSpeed
+# int ySpeed
+# Image img
+# int currentFrame
+# int width
+# int height
+# int sidez
++ <<Create>> ASprite(Image,int,int)
++ <<Create>> ASprite(Image,int,int,int,int)
++ int getRows()
++ void setRows(int)
++ int getCols()
++ void setCols(int)
++ int getColSpace()
++ void setColSpace(int)
++ int getRowSpace()
++ void setRowSpace(int)
++ Image getImg()
++ void setImg(Image)
++ int getCurrentFrame()
++ void setCurrentFrame(int)
++ void setWidth(int)
++ void setHeight(int)
++ void setSide(int)
++ int getX()
++ void setX(int)
++ int getY()
++ void setY(int)
++ void setPos(int,int)
++ int getXSpeed()
++ void setXSpeed(int)
++ int getYSpeed()
++ void setYSpeed(int)
++ void setSpeed(int,double)
++ double getSpeed()
++ double getAngDeg()
++ int getSide()
++ int getWidth()
++ int getHeight()
++ Rect getRect()
++ Rect[] getRects()
++ boolean collides(ASprite)
++ void draw(GraphicsContext)
++ {abstract}void update()
+}
+
+abstract class edu.masanz.da.pk3.sprite.enemies.AEnemy {
+- AWeapon weapon
++ <<Create>> AEnemy(Image,int,int)
++ <<Create>> AEnemy(Image,int,int,int,int)
++ void setWeapon(AWeapon)
++ AWeapon getWeapon()
++ boolean hasWeapon()
++ List<AShot> shoot()
+}
+
+class edu.masanz.da.pk3.sprite.items.LifeItem {
++ <<Create>> LifeItem()
++ void useItem()
++ void update()
+}
+
+class edu.masanz.da.pk3.sprite.weaponry.Shot {
+- {static} int ROWS
+- {static} int COLS
++ <<Create>> Shot(Image,int,int)
++ void setPos(int,int)
++ void update()
+}
+
+
+abstract class edu.masanz.da.pk3.sprite.items.AItem {
++ <<Create>> AItem(Image,int,int)
++ <<Create>> AItem(Image,int,int,int,int)
++ {abstract}void useItem()
+}
+
+class edu.masanz.da.pk3.sprite.enemies.StrongBear {
++ <<Create>> StrongBear()
+}
+
+class edu.masanz.da.pk3.sprite.enemies.FlyingBunny {
++ <<Create>> FlyingBunny()
++ <<Create>> FlyingBunny(int)
+}
+
+class edu.masanz.da.pk3.sprite.enemies.BombEnemy {
+- int shield
++ <<Create>> BombEnemy()
++ void update()
++ boolean impact()
+}
+
+
+class edu.masanz.da.pk3.sprite.weaponry.CrossGun {
+- boolean isDisposable
++ <<Create>> CrossGun(ASprite)
++ <<Create>> CrossGun(ASprite,boolean,int,boolean)
++ List<AShot> shoot()
++ boolean isDisposable()
+}
+
+
+abstract class edu.masanz.da.pk3.sprite.enemies.AFlyingEnemy {
++ <<Create>> AFlyingEnemy(Image,int,int)
++ <<Create>> AFlyingEnemy(Image,int,int,int,int)
++ void update()
++ void updateFrame()
+}
+
+abstract class edu.masanz.da.pk3.sprite.weaponry.AWeapon {
+# ASprite owner
+# boolean isRechargable
+# int ammunition
++ <<Create>> AWeapon(ASprite)
++ <<Create>> AWeapon(ASprite,boolean,int)
++ ASprite getOwner()
++ void setOwner(ASprite)
++ boolean isRechargable()
++ void setRechargable(boolean)
++ void recharge(int)
++ int getAmmunition()
++ void setAmmunition(int)
++ {abstract}List<AShot> shoot()
++ String toString()
++ boolean equals(Object)
++ int hashCode()
+}
+
+
+class edu.masanz.da.pk3.sprite.weaponry.Cannonball {
+~ {static} int ROWS
+~ {static} int COLS
+~ {static} int MAX_SPEED
++ <<Create>> Cannonball()
++ void update()
+}
+
+class edu.masanz.da.pk3.sprite.weaponry.Pistol {
++ <<Create>> Pistol(ASprite)
++ List<AShot> shoot()
++ AShot shootOnce()
++ boolean isDisposable()
+}
+
+class edu.masanz.da.pk3.sprite.items.CrossGunItem {
++ <<Create>> CrossGunItem()
++ void useItem()
++ void update()
+}
+
+class edu.masanz.da.pk3.sprite.enemies.Tower {
++ <<Create>> Tower()
++ void update()
++ void updateFrame()
+}
+
+class edu.masanz.da.pk3.sprite.Hero {
+- boolean isAlive
+- List<AWeapon> weapons
+- {static} Logger log
++ <<Create>> Hero()
++ void setInitPos()
++ boolean isAlive()
++ void setAlive(boolean)
++ void moveRight()
++ void moveLeft()
++ void moveUp()
++ void moveDown()
++ void waiting()
++ void stopVert()
++ void stopHoriz()
++ void updateFrame()
++ Rect[] getRects()
++ void update()
++ boolean isAtFinishPosition()
++ List<AShot> shoot()
++ int getAmmunition()
++ void rechargeAmmunition(int)
++ void rechargePistol()
++ void addWeapon(AWeapon)
+}
+
+class edu.masanz.da.pk3.sprite.weaponry.HeroTargetGun {
++ <<Create>> HeroTargetGun(ASprite)
++ List<AShot> shoot()
+}
+
+abstract class edu.masanz.da.pk3.sprite.enemies.AWaterEnemy {
+- {static} Logger log
++ <<Create>> AWaterEnemy(Image,int,int)
++ <<Create>> AWaterEnemy(Image,int,int,int,int)
++ void update()
++ void updateFrame()
+}
+
+abstract class edu.masanz.da.pk3.sprite.enemies.AMovableEnemy {
++ <<Create>> AMovableEnemy(Image,int,int)
++ <<Create>> AMovableEnemy(Image,int,int,int,int)
++ void update()
++ void updateFrame()
+}
+
+class edu.masanz.da.pk3.sprite.enemies.FlyingBouncerEnemy {
+- {static} Logger log
++ <<Create>> FlyingBouncerEnemy()
++ <<Create>> FlyingBouncerEnemy(int)
++ boolean canGoToNextPosition()
++ void goToNextPosition()
++ void changeRoute()
++ void updateFrame()
++ String toString()
+}
+
+
+class edu.masanz.da.pk3.sprite.items.AmmunitionItem {
+- int ammunition
++ <<Create>> AmmunitionItem(int)
++ void useItem()
++ void update()
+}
+
+
+abstract class edu.masanz.da.pk3.sprite.enemies.AGroundEnemy {
+- {static} Logger log
++ <<Create>> AGroundEnemy(Image,int,int)
++ <<Create>> AGroundEnemy(Image,int,int,int,int)
++ void update()
++ void updateFrame()
+}
+
+
+class edu.masanz.da.pk3.sprite.hud.LifesSprite {
+~ AppStatus appStatus
++ <<Create>> LifesSprite(Image,AppStatus)
++ void update()
++ void updateFrame()
++ void draw(GraphicsContext)
+}
+
+
+class edu.masanz.da.pk3.sprite.enemies.Bear {
+- int N
+- int T
+- int S
+- int n
+- int t
++ <<Create>> Bear()
++ void updateFrame()
++ void update()
+}
+
+
+class edu.masanz.da.pk3.sprite.effects.SpriteTemp {
+- int life
+- List<SpriteTemp> temps
++ <<Create>> SpriteTemp(List<SpriteTemp>,int,int,Image,int)
++ void update()
++ void remove()
+}
+
+
+class edu.masanz.da.pk3.sprite.enemies.Miau {
+- int n
++ <<Create>> Miau()
++ <<Create>> Miau(int)
++ void updateFrame()
+}
+
+
+class edu.masanz.da.pk3.sprite.enemies.Shark {
++ <<Create>> Shark()
++ <<Create>> Shark(int)
+}
+
+
+abstract class edu.masanz.da.pk3.sprite.weaponry.AShot {
++ <<Create>> AShot(Image,int,int)
+}
+
+
+interface edu.masanz.da.pk3.sprite.interfaces.IIsDisposable {
+~ boolean isDisposable()
+}
+
+interface edu.masanz.da.pk3.sprite.interfaces.ICanShoot {
+~ List<AShot> shoot()
+}
+
+interface edu.masanz.da.pk3.sprite.interfaces.ICanSpawn {
+~ List<AEnemy> spawn()
+}
+
+interface edu.masanz.da.pk3.sprite.interfaces.IHaveShield {
+~ boolean impact()
+}
+
+interface edu.masanz.da.pk3.sprite.interfaces.ICanMove {
+~ boolean canGoToNextPosition()
+~ void goToNextPosition()
+~ void changeRoute()
+}
+
+edu.masanz.da.pk3.sprite.ASprite <|-- edu.masanz.da.pk3.sprite.Hero
+edu.masanz.da.pk3.sprite.ASprite <|-- edu.masanz.da.pk3.sprite.enemies.AEnemy
+edu.masanz.da.pk3.sprite.ASprite <|-- edu.masanz.da.pk3.sprite.weaponry.AShot
+edu.masanz.da.pk3.sprite.ASprite <|-- edu.masanz.da.pk3.sprite.items.AItem
+edu.masanz.da.pk3.sprite.ASprite <|-- edu.masanz.da.pk3.sprite.hud.LifesSprite
+edu.masanz.da.pk3.sprite.ASprite <|-- edu.masanz.da.pk3.sprite.effects.SpriteTemp
+edu.masanz.da.pk3.sprite.interfaces.IHaveShield <|.. edu.masanz.da.pk3.sprite.enemies.BombEnemy
+edu.masanz.da.pk3.sprite.interfaces.IIsDisposable <|.. edu.masanz.da.pk3.sprite.weaponry.CrossGun
+edu.masanz.da.pk3.sprite.interfaces.IIsDisposable <|.. edu.masanz.da.pk3.sprite.weaponry.Pistol
+edu.masanz.da.pk3.sprite.interfaces.ICanShoot <|.. edu.masanz.da.pk3.sprite.enemies.AEnemy
+edu.masanz.da.pk3.sprite.interfaces.ICanMove <|.. edu.masanz.da.pk3.sprite.enemies.AMovableEnemy
+edu.masanz.da.pk3.sprite.items.AItem <|-- edu.masanz.da.pk3.sprite.items.LifeItem
+edu.masanz.da.pk3.sprite.items.AItem <|-- edu.masanz.da.pk3.sprite.items.CrossGunItem
+edu.masanz.da.pk3.sprite.items.AItem <|-- edu.masanz.da.pk3.sprite.items.AmmunitionItem
+edu.masanz.da.pk3.sprite.enemies.Bear <|-- edu.masanz.da.pk3.sprite.enemies.StrongBear
+edu.masanz.da.pk3.sprite.enemies.AFlyingEnemy <|-- edu.masanz.da.pk3.sprite.enemies.FlyingBunny
+edu.masanz.da.pk3.sprite.enemies.AEnemy <|-- edu.masanz.da.pk3.sprite.enemies.BombEnemy
+edu.masanz.da.pk3.sprite.enemies.AEnemy <|-- edu.masanz.da.pk3.sprite.enemies.AFlyingEnemy
+edu.masanz.da.pk3.sprite.enemies.AEnemy <|-- edu.masanz.da.pk3.sprite.enemies.Tower
+edu.masanz.da.pk3.sprite.enemies.AEnemy <|-- edu.masanz.da.pk3.sprite.enemies.AWaterEnemy
+edu.masanz.da.pk3.sprite.enemies.AEnemy <|-- edu.masanz.da.pk3.sprite.enemies.AMovableEnemy
+edu.masanz.da.pk3.sprite.enemies.AMovableEnemy <|-- edu.masanz.da.pk3.sprite.enemies.FlyingBouncerEnemy
+edu.masanz.da.pk3.sprite.enemies.AEnemy <|-- edu.masanz.da.pk3.sprite.enemies.AGroundEnemy
+edu.masanz.da.pk3.sprite.enemies.AGroundEnemy <|-- edu.masanz.da.pk3.sprite.enemies.Bear
+edu.masanz.da.pk3.sprite.enemies.AGroundEnemy <|-- edu.masanz.da.pk3.sprite.enemies.Miau
+edu.masanz.da.pk3.sprite.enemies.AWaterEnemy <|-- edu.masanz.da.pk3.sprite.enemies.Shark
+edu.masanz.da.pk3.sprite.weaponry.AShot <|-- edu.masanz.da.pk3.sprite.weaponry.Shot
+edu.masanz.da.pk3.sprite.weaponry.AWeapon <|-- edu.masanz.da.pk3.sprite.weaponry.CrossGun
+edu.masanz.da.pk3.sprite.weaponry.AShot <|-- edu.masanz.da.pk3.sprite.weaponry.Cannonball
+edu.masanz.da.pk3.sprite.weaponry.AWeapon <|-- edu.masanz.da.pk3.sprite.weaponry.Pistol
+edu.masanz.da.pk3.sprite.weaponry.AWeapon <|-- edu.masanz.da.pk3.sprite.weaponry.HeroTargetGun
+@enduml

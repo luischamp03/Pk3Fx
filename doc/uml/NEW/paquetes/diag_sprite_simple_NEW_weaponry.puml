@@ -1,0 +1,12 @@
+@startuml
+weaponry.AShot <|-- weaponry.Shot
+weaponry.AWeapon <|-- weaponry.CrossGun
+weaponry.AShot <|-- weaponry.Cannonball
+interfaces.IIsDisposable <|.up. weaponry.Pistol
+interfaces.IIsDisposable <|.up. weaponry.CrossGun
+weaponry.AWeapon <|-- weaponry.Pistol
+weaponry.AWeapon <|-- weaponry.HeroTargetGun
+ASprite <|-- weaponry.AShot
+Hero o--> weaponry.AWeapon
+Hero -left-|> ASprite
+@enduml

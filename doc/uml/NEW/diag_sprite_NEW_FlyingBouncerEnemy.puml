@@ -1,0 +1,5 @@
+@startuml
+interfaces.ICanMove <|.. enemies.AMovableEnemy
+enemies.AEnemy <|-- enemies.AMovableEnemy
+enemies.AMovableEnemy <|-- enemies.FlyingBouncerEnemy
+@enduml

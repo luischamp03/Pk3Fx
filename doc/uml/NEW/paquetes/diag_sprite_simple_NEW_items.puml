@@ -1,0 +1,7 @@
+@startuml
+
+items.AItem <|-- items.LifeItem
+ASprite <|-- items.AItem
+items.AItem <|-- items.CrossGunItem
+items.AItem <|-- items.AmmunitionItem
+@enduml

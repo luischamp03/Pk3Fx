@@ -1,0 +1,138 @@
+[2025-04-10 08:25:44] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 08:52:46] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 08:52:47] [DEBUG] [GameManager: 53] start level=11
+[2025-04-10 08:52:47] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 08:52:47] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 08:53:12] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 08:53:24] [DEBUG] [GameManager: 53] start level=11
+[2025-04-10 08:53:24] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 08:53:24] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 08:55:05] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 08:55:06] [DEBUG] [GameManager: 53] start level=12
+[2025-04-10 08:55:06] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 08:55:06] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 08:55:10] [DEBUG] [GameManager:200] updateGame E_APP_ONELESSLIFE enemies=6 enemyShots=0 heroShots=0
+[2025-04-10 08:55:10] [DEBUG] [GameManager: 80] sameLevel level=12
+[2025-04-10 09:07:39] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:07:39] [DEBUG] [Hero:205] weapon=CrossGun added with 5 bullets
+[2025-04-10 09:07:39] [DEBUG] [Hero:206] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:07:40] [DEBUG] [GameManager: 53] start level=12
+[2025-04-10 09:07:40] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:07:40] [DEBUG] [Hero:192] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:08:15] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:08:15] [DEBUG] [Hero:205] weapon=CrossGun added with 5 bullets
+[2025-04-10 09:08:15] [DEBUG] [Hero:206] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:08:16] [DEBUG] [GameManager: 53] start level=13
+[2025-04-10 09:08:16] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:08:16] [DEBUG] [Hero:192] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:08:24] [DEBUG] [Hero:155] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:08:46] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:08:46] [DEBUG] [Hero:205] weapon=CrossGun added with 5 bullets
+[2025-04-10 09:08:46] [DEBUG] [Hero:206] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:08:49] [DEBUG] [GameManager: 53] start level=13
+[2025-04-10 09:08:49] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:08:49] [DEBUG] [Hero:192] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:08:55] [DEBUG] [Hero:155] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:35:44] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:35:47] [DEBUG] [GameManager3: 52] start level=13
+[2025-04-10 09:35:47] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:35:47] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:35:51] [DEBUG] [GameManager3:199] updateGame E_APP_ONELESSLIFE enemies=4 enemyShots=0 heroShots=0
+[2025-04-10 09:35:52] [DEBUG] [GameManager3: 79] sameLevel level=13
+[2025-04-10 09:35:56] [DEBUG] [GameManager3: 67] nextLevel level=14
+[2025-04-10 09:36:02] [DEBUG] [Hero:180] rechargeAmmunition 5
+[2025-04-10 09:36:02] [DEBUG] [Hero:181] weapons=[Pistol owned by Hero with 14 ammunition rechargable]
+[2025-04-10 09:36:06] [DEBUG] [Hero:180] rechargeAmmunition 10
+[2025-04-10 09:36:06] [DEBUG] [Hero:181] weapons=[Pistol owned by Hero with 23 ammunition rechargable]
+[2025-04-10 09:36:20] [DEBUG] [GameManager3: 67] nextLevel level=15
+[2025-04-10 09:36:21] [DEBUG] [Hero:205] weapon=CrossGun added with 5 bullets
+[2025-04-10 09:36:21] [DEBUG] [Hero:206] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 22 ammunition rechargable]
+[2025-04-10 09:36:27] [DEBUG] [GameManager3: 67] nextLevel level=16
+[2025-04-10 09:36:31] [DEBUG] [Hero:155] weapons=[Pistol owned by Hero with 22 ammunition rechargable]
+[2025-04-10 09:41:32] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:41:33] [DEBUG] [GameManager3: 52] start level=11
+[2025-04-10 09:41:33] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:41:33] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:41:42] [DEBUG] [GameManager3:199] updateGame E_APP_ONELESSLIFE enemies=6 enemyShots=0 heroShots=0
+[2025-04-10 09:41:42] [DEBUG] [GameManager3: 79] sameLevel level=11
+[2025-04-10 09:41:52] [DEBUG] [GameManager3:199] updateGame E_APP_ONELESSLIFE enemies=5 enemyShots=0 heroShots=0
+[2025-04-10 09:41:52] [DEBUG] [GameManager3: 79] sameLevel level=11
+[2025-04-10 09:42:28] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:42:29] [DEBUG] [GameManager3: 52] start level=11
+[2025-04-10 09:42:29] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:42:29] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:43:14] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:43:15] [DEBUG] [GameManager3: 52] start level=11
+[2025-04-10 09:43:15] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:43:15] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:43:49] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:43:50] [DEBUG] [GameManager3: 52] start level=11
+[2025-04-10 09:43:50] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:43:50] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:46:18] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:46:19] [DEBUG] [GameManager3: 52] start level=12
+[2025-04-10 09:46:19] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:46:19] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:46:33] [DEBUG] [GameManager3:199] updateGame E_APP_ONELESSLIFE enemies=5 enemyShots=1 heroShots=0
+[2025-04-10 09:46:33] [DEBUG] [GameManager3: 79] sameLevel level=12
+[2025-04-10 09:46:40] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:46:41] [DEBUG] [GameManager3: 52] start level=12
+[2025-04-10 09:46:41] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:46:41] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:46:45] [DEBUG] [GameManager3:199] updateGame E_APP_ONELESSLIFE enemies=6 enemyShots=0 heroShots=0
+[2025-04-10 09:46:45] [DEBUG] [GameManager3: 79] sameLevel level=12
+[2025-04-10 09:48:35] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:48:36] [DEBUG] [GameManager3: 52] start level=12
+[2025-04-10 09:48:36] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:48:36] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:48:39] [DEBUG] [GameManager3: 67] nextLevel level=13
+[2025-04-10 09:48:44] [DEBUG] [GameManager3:199] updateGame E_APP_ONELESSLIFE enemies=3 enemyShots=0 heroShots=0
+[2025-04-10 09:48:44] [DEBUG] [GameManager3: 79] sameLevel level=13
+[2025-04-10 09:48:48] [DEBUG] [GameManager3: 67] nextLevel level=14
+[2025-04-10 09:48:50] [DEBUG] [Hero:180] rechargeAmmunition 5
+[2025-04-10 09:48:50] [DEBUG] [Hero:181] weapons=[Pistol owned by Hero with 12 ammunition rechargable]
+[2025-04-10 09:48:51] [DEBUG] [Hero:180] rechargeAmmunition 10
+[2025-04-10 09:48:51] [DEBUG] [Hero:181] weapons=[Pistol owned by Hero with 22 ammunition rechargable]
+[2025-04-10 09:48:53] [DEBUG] [GameManager3:199] updateGame E_APP_ONELESSLIFE enemies=4 enemyShots=0 heroShots=0
+[2025-04-10 09:48:53] [DEBUG] [GameManager3: 79] sameLevel level=14
+[2025-04-10 09:48:54] [DEBUG] [Hero:180] rechargeAmmunition 10
+[2025-04-10 09:48:54] [DEBUG] [Hero:181] weapons=[Pistol owned by Hero with 32 ammunition rechargable]
+[2025-04-10 09:48:55] [DEBUG] [Hero:180] rechargeAmmunition 5
+[2025-04-10 09:48:55] [DEBUG] [Hero:181] weapons=[Pistol owned by Hero with 37 ammunition rechargable]
+[2025-04-10 09:48:57] [DEBUG] [GameManager3: 67] nextLevel level=15
+[2025-04-10 09:48:58] [DEBUG] [Hero:205] weapon=CrossGun added with 5 bullets
+[2025-04-10 09:48:58] [DEBUG] [Hero:206] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 37 ammunition rechargable]
+[2025-04-10 09:49:02] [DEBUG] [Hero:155] weapons=[Pistol owned by Hero with 37 ammunition rechargable]
+[2025-04-10 09:49:09] [DEBUG] [Hero:205] weapon=CrossGun added with 5 bullets
+[2025-04-10 09:49:09] [DEBUG] [Hero:206] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 33 ammunition rechargable]
+[2025-04-10 09:49:12] [DEBUG] [Hero:199] weapon=CrossGun recharged with 5 bullets
+[2025-04-10 09:49:12] [DEBUG] [Hero:200] weapons=[CrossGun owned by Hero with 9 ammunition rechargable and disposable, Pistol owned by Hero with 33 ammunition rechargable]
+[2025-04-10 09:49:19] [DEBUG] [Hero:199] weapon=CrossGun recharged with 5 bullets
+[2025-04-10 09:49:19] [DEBUG] [Hero:200] weapons=[CrossGun owned by Hero with 14 ammunition rechargable and disposable, Pistol owned by Hero with 33 ammunition rechargable]
+[2025-04-10 09:49:28] [DEBUG] [Hero:155] weapons=[Pistol owned by Hero with 33 ammunition rechargable]
+[2025-04-10 09:49:39] [DEBUG] [GameManager3: 67] nextLevel level=16
+[2025-04-10 09:49:48] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:49:48] [DEBUG] [GameManager3: 52] start level=14
+[2025-04-10 09:49:48] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:49:48] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:49:50] [DEBUG] [Hero:180] rechargeAmmunition 10
+[2025-04-10 09:49:50] [DEBUG] [Hero:181] weapons=[Pistol owned by Hero with 20 ammunition rechargable]
+[2025-04-10 09:49:51] [DEBUG] [GameManager3: 67] nextLevel level=15
+[2025-04-10 09:49:53] [DEBUG] [Hero:205] weapon=CrossGun added with 5 bullets
+[2025-04-10 09:49:53] [DEBUG] [Hero:206] weapons=[CrossGun owned by Hero with 5 ammunition rechargable and disposable, Pistol owned by Hero with 20 ammunition rechargable]
+[2025-04-10 09:49:56] [DEBUG] [Hero:199] weapon=CrossGun recharged with 5 bullets
+[2025-04-10 09:49:56] [DEBUG] [Hero:200] weapons=[CrossGun owned by Hero with 10 ammunition rechargable and disposable, Pistol owned by Hero with 20 ammunition rechargable]
+[2025-04-10 09:50:03] [DEBUG] [Hero:155] weapons=[Pistol owned by Hero with 20 ammunition rechargable]
+[2025-04-10 09:51:22] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:51:23] [DEBUG] [GameManager3: 52] start level=12
+[2025-04-10 09:51:23] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:51:23] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:51:25] [DEBUG] [GameManager3: 67] nextLevel level=13
+[2025-04-10 09:51:58] [INFO ] [AppPk3Fx: 50] --------------------------------------------------------------------------------
+[2025-04-10 09:51:59] [DEBUG] [GameManager3: 52] start level=12
+[2025-04-10 09:51:59] [DEBUG] [Hero:191] rechargePistol
+[2025-04-10 09:51:59] [DEBUG] [Hero:192] weapons=[Pistol owned by Hero with 10 ammunition rechargable]
+[2025-04-10 09:52:01] [DEBUG] [GameManager3: 67] nextLevel level=13
+[2025-04-10 09:52:13] [DEBUG] [GameManager3: 67] nextLevel level=14
+[2025-04-10 09:52:14] [DEBUG] [Hero:180] rechargeAmmunition 10
+[2025-04-10 09:52:14] [DEBUG] [Hero:181] weapons=[Pistol owned by Hero with 20 ammunition rechargable]

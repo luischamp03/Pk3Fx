@@ -1,0 +1,18 @@
+@startuml
+enemies.Bear <|-- enemies.StrongBear
+enemies.AFlyingEnemy <|-- enemies.FlyingBunny
+interfaces.IHaveShield <|.. enemies.BombEnemy
+enemies.AEnemy <|-- enemies.BombEnemy
+enemies.AEnemy <|-- enemies.AFlyingEnemy
+interfaces.ICanShoot <|.. enemies.AEnemy
+ASprite <|-- enemies.AEnemy
+enemies.AEnemy <|-- enemies.Tower
+enemies.AEnemy <|-- enemies.AWaterEnemy
+interfaces.ICanMove <|.. enemies.AMovableEnemy
+enemies.AEnemy <|-- enemies.AMovableEnemy
+enemies.AMovableEnemy <|-- enemies.FlyingBouncerEnemy
+enemies.AEnemy <|-- enemies.AGroundEnemy
+enemies.AGroundEnemy <|-- enemies.Bear
+enemies.AGroundEnemy <|-- enemies.Miau
+enemies.AWaterEnemy <|-- enemies.Shark
+@enduml

@@ -1,0 +1,82 @@
+@startuml
+
+abstract class ASprite {
+- {static} Logger log
+# int rows
+# int cols
+# int colSpace
+# int rowSpace
+# int x
+# int y
+# int xSpeed
+# int ySpeed
+# Image img
+# int currentFrame
+# int width
+# int height
+# int side
++ <<Create>> ASprite(Image,int,int)
++ <<Create>> ASprite(Image,int,int,int,int)
++ int getRows()
++ void setRows(int)
++ int getCols()
++ void setCols(int)
++ int getColSpace()
++ void setColSpace(int)
++ int getRowSpace()
++ void setRowSpace(int)
++ Image getImg()
++ void setImg(Image)
++ int getCurrentFrame()
++ void setCurrentFrame(int)
++ void setWidth(int)
++ void setHeight(int)
++ void setSide(int)
++ int getX()
++ void setX(int)
++ int getY()
++ void setY(int)
++ void setPos(int,int)
++ int getXSpeed()
++ void setXSpeed(int)
++ int getYSpeed()
++ void setYSpeed(int)
++ void setSpeed(int,double)
++ double getSpeed()
++ double getAngDeg()
++ int getSide()
++ int getWidth()
++ int getHeight()
++ Rect getRect()
++ Rect[] getRects()
++ boolean collides(ASprite)
++ void draw(GraphicsContext)
++ {abstract}void update()
+}
+
+abstract class enemies.AEnemy {
+- AWeapon weapon
++ <<Create>> AEnemy(Image,int,int)
++ <<Create>> AEnemy(Image,int,int,int,int)
++ void setWeapon(AWeapon)
++ AWeapon getWeapon()
++ boolean hasWeapon()
++ List<AShot> shoot()
+}
+
+class enemies.BombEnemy {
+- int shield
++ <<Create>> BombEnemy()
++ void update()
++ boolean impact()
+}
+
+interface interfaces.IHaveShield {
+~ boolean impact()
+}
+
+
+ASprite <|-right- enemies.AEnemy
+interfaces.IHaveShield <|.left. enemies.BombEnemy
+enemies.AEnemy <|-- enemies.BombEnemy
+@enduml

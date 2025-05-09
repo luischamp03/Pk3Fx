@@ -1,0 +1,33 @@
+@startuml
+
+class items.LifeItem {
++ <<Create>> LifeItem()
++ void useItem()
++ void update()
+}
+
+abstract class items.AItem {
++ <<Create>> AItem(Image,int,int)
++ <<Create>> AItem(Image,int,int,int,int)
++ {abstract}void useItem()
+}
+
+class items.CrossGunItem {
++ <<Create>> CrossGunItem()
++ void useItem()
++ void update()
+}
+
+
+class items.AmmunitionItem {
+- int ammunition
++ <<Create>> AmmunitionItem(int)
++ void useItem()
++ void update()
+}
+
+ASprite <|-- items.AItem
+items.AItem <|-- items.LifeItem
+items.AItem <|-- items.CrossGunItem
+items.AItem <|-- items.AmmunitionItem
+@enduml
